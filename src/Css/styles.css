@@ -1,0 +1,85 @@
+.header {
+  width: 100vw;
+  z-index: 2;
+
+  position: absolute;
+
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+
+.headerLogo {
+  z-index: 2;
+  background-color: #222;
+  /*background-image: url("../Images/logo.svg");*/
+  background-repeat: no-repeat;
+
+  height: 100px;
+  width: 150px;
+  margin-top: 15px;
+  margin-left: 5%;
+  color: white;
+  border-top: solid #333;
+}
+
+.headerTitle {
+  font-size: 1.2em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Carousel {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../Images/carExample.jpg");
+  /*background-color: #474747;*/
+  background-size: cover;
+  background-position: center;
+
+}
+
+.Overview {
+  text-align: left;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+
+
+}
+
+.ParallaxTitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+
+
+
+.spacerSmall {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.spacerMedium {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.spacerBig {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
