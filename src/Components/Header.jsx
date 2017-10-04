@@ -5,19 +5,26 @@ import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 
 class Header extends Component {
 
+
+
   render() {
 
     return(
       <div className = "header">
 
 
-        <Navbar inverse collapseOnSelect>
+        <Navbar style = {{background: "", border: "0", color: "#FFF"}} className = "navItem" inverse fixedTop >
           <Navbar.Header>
-            <Navbar.Brand>
-              <a href="#">Watonomous</a>
+            <Nav>
+            <Navbar.Brand >
+
+              <a href="#" className = "navItem" >Watonomous</a>
+              {/* <p className = "navItem" ></p> */}
+
 
 
             </Navbar.Brand>
+          </Nav>
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>

@@ -17,6 +17,7 @@ class Body extends Component {
 
     return (
       <div>
+        <div className = "spacerMedium" />
 
         <BodyIndex/>
         <div className = "spacerBig"></div>
@@ -41,25 +42,25 @@ class Body extends Component {
 
         <BodyIndex />
 
-        <div style = {{height: "1000px"}}>
+        <div style = {{height: "600px"}}>
           <Parallax bgImage={BoltFront} strength={200} style = {{zIndex: "3"}} >
             <div className = "spacerBig"/>
             <div className = "spacerBig"/>
             <div className = "spacerBig"/>
             <div className = "spacerBig"/>
 
-            <div style = {{backgroundColor: "#222", width: "400px", marginLeft: "80px", textAlign: "left", paddingLeft: "10px"}}>
+            {/* <div style = {{backgroundColor: "#222", width: "400px", marginLeft: "80px", textAlign: "left", paddingLeft: "10px"}}>
               <h1 className = "ParallaxTitle">   Waterloo. Autonomous </h1>
 
-            </div>
+            </div> */}
             <div className = "spacerBig"/>
             <div className = "spacerBig"/>
             <div className = "spacerBig"/>
+            {/* <div className = "spacerBig"/>
+            <div className = "spacerBig"/> */}
+            {/* <div className = "spacerBig"/>
             <div className = "spacerBig"/>
-            <div className = "spacerBig"/>
-            <div className = "spacerBig"/>
-            <div className = "spacerBig"/>
-            <div className = "spacerBig"/>
+            <div className = "spacerBig"/> */}
 
 
 
