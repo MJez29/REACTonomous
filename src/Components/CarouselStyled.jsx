@@ -34,32 +34,30 @@ class CarouselStyled extends Component {
 
   render() {
     return(
-      <Carousel activeIndex={this.state.index} direction={this.state.direction} onSelect={this.handleSelect} style = {{width: "100vw", height:"100vh"}}>
+      <Carousel activeIndex={this.state.index} direction={this.state.direction} onSelect={this.handleSelect} >
         <Carousel.Item >
-          <Parallax bgImage={ParallaxImg1} strength={400} style = {{zIndex: "3"}} >
+          <div>
+            <Parallax bgImage={ParallaxImg1} strength={400} style = {{zIndex: "3"}} >
 
-            <div style = {{height: "100vh"}}>
-              <div className = "spacerBig"/>
-              <div className = "spacerBig"/>
-              <div className = "spacerBig"/>
-              <div className = "spacerBig"/>
+              <div style = {{height: "100vh"}}>
 
-              <div style = {{backgroundColor: "#222", width: "400px", marginLeft: "80px", textAlign: "left", paddingLeft: "10px"}}>
-                <h1 className = "ParallaxTitle">   Welcome to Watonomous </h1>
+
+                {/* <div style = {{backgroundColor: "#222", width: "400px", marginLeft: "80px", textAlign: "left", paddingLeft: "10px"}}>
+                  <h1 className = "ParallaxTitle">   Welcome to Watonomous </h1>
+
+                </div> */}
 
               </div>
-              <div className = "spacerBig"/>
-              <div className = "spacerBig"/>
-              <div className = "spacerBig"/>
-              <div className = "spacerBig"/>
-            </div>
 
 
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Parallax>
+
+            </Parallax>
+          </div>
+
+          <Carousel.Caption>
+            <h3>Wato Self-Driving Car Team</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
 
 
         </Carousel.Item>

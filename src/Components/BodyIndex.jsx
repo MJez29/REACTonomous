@@ -44,7 +44,6 @@ class BodyIndex extends Component {
 
               </p>
 
-              <div className = "spacerBig" />
 
 
 
