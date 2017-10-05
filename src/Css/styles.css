@@ -1,3 +1,11 @@
+@font-face { font-family: RalewayReg; src: url('../Raleway/Raleway-Regular.ttf'); }
+@font-face { font-family: RalewayLig; src: url('../Raleway/Raleway-Light.ttf'); }
+
+@font-face { font-family: RalewayBld; src: url('../Raleway/Raleway-Bold.ttf'); }
+@font-face { font-family: RalewayMed; src: url('../Raleway/Raleway-Medium.ttf'); }
+@font-face { font-family: RalewayRegIta; src: url('../Raleway/Raleway-Italic.ttf'); }
+
+
 .header {
   width: 100vw;
   z-index: 2;
@@ -8,11 +16,6 @@
 
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
 }
 
 
@@ -81,13 +84,55 @@
 }
 
 .heading {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-size: 30px;
   color: #000;
 }
 
 .navItem {
   color: white;
+}
+
+.center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 450px;
+  height: 200px;
+  background: rgba(220, 220, 220, .8);
+  border-radius: 3px;
+}
+.carouselHeading {
+  padding-top: 20px;
+  line-height: 40px;
+
+  font-family: RalewayReg, sans-serif;
+
+  font-size: 67px;
+
+  color: #222;
+}
+.carouselParagraph {
+  line-height: 45px;
+  font-family: RalewayReg, sans-serif;
+  font-size: 50px;
+
+  color: #222;
+}
+
+.carouselParagraph2 {
+  /*line-height: 40px;*/
+  line-height: 20px;
+  letter-spacing: 1.6px;
+
+
+  font-family: RalewayLig, sans-serif;
+  font-size: 30px;
+
+  color: #222;
 }
 
 
