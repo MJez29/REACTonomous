@@ -83,11 +83,33 @@
 .heading {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
-  color: #fff;
+  color: #000;
 }
 
 .navItem {
   color: white;
+}
+
+
+#background-video{
+
+  height: 100%;
+  width: 100%;
+  float: left;
+  top: 0;
+  padding: none;
+  position: fixed;
+
+
+}
+
+.videoBackground {
+  width: 100vw;
+  height: 100vh;
+  /*background-color: #474747;*/
+  background-size: cover;
+  background-position: center;
+
 }
 
 @keyframes App-logo-spin {
