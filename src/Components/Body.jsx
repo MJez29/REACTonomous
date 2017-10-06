@@ -33,8 +33,6 @@ class Body extends Component {
           <Parallax bgImage={ParallaxImg1} strength={400} style = {{zIndex: "3"}} >
             <div style = {{height: "500px"}}/>
 
-
-
           </Parallax>
         </div>
 

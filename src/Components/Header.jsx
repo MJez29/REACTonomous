@@ -27,7 +27,7 @@ class Header extends Component {
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
-            <Nav>
+            <Nav pullRight>
               <NavItem eventKey={1} href="#">Autonomous</NavItem>
               <NavItem eventKey={2} href="#">Mechanical</NavItem>
               <NavItem eventKey={2} href="#">SAE Autodrive</NavItem>
