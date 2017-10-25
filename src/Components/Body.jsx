@@ -52,30 +52,7 @@ class Body extends Component {
 
         <IndexBody2 />
 
-        <div style = {{height: "600px"}}>
-          <Parallax bgImage={BoltFront} strength={200} style = {{zIndex: "3"}} >
-            <div className = "spacerBig"/>
-            <div className = "spacerBig"/>
-            <div className = "spacerBig"/>
-            <div className = "spacerBig"/>
-
-            {/* <div style = {{backgroundColor: "#222", width: "400px", marginLeft: "80px", textAlign: "left", paddingLeft: "10px"}}>
-            <h1 className = "ParallaxTitle">   Waterloo. Autonomous </h1>
-
-          </div> */}
-          <div className = "spacerBig"/>
-          <div className = "spacerBig"/>
-          <div className = "spacerBig"/>
-          {/* <div className = "spacerBig"/>
-          <div className = "spacerBig"/> */}
-          {/* <div className = "spacerBig"/>
-          <div className = "spacerBig"/>
-          <div className = "spacerBig"/> */}
-
-
-
-        </Parallax>
-      </div>
+        
 
       <IndexBody1 />
 
