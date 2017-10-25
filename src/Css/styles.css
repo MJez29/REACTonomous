@@ -102,7 +102,7 @@
   left: 0;
   width: 450px;
   height: 200px;
-  background: rgba(220, 220, 220, .8);
+  background: rgba(220, 220, 220, .0);
   border-radius: 3px;
 }
 .carouselHeading {
@@ -113,14 +113,14 @@
 
   font-size: 67px;
 
-  color: #222;
+  color: #FFF;
 }
 .carouselParagraph {
   line-height: 45px;
   font-family: RalewayReg, sans-serif;
   font-size: 50px;
 
-  color: #222;
+  color: #FFF;
 }
 
 .carouselParagraph2 {
@@ -132,7 +132,7 @@
   font-family: RalewayLig, sans-serif;
   font-size: 30px;
 
-  color: #222;
+  color: #FFF;
 }
 
 

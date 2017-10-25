@@ -62,7 +62,7 @@ class CarouselStyled extends Component {
 
 
 
-          <div className = "center">
+          <div className = "center" style = {{paddingTop: "100px"}}>
             <h1 className = "carouselHeading">WATERLOO</h1>
             <p className = "carouselParagraph">AUTONOMOUS</p>
             <p className = "carouselParagraph2">VEHICLE DESIGN TEAM</p>
@@ -77,7 +77,7 @@ class CarouselStyled extends Component {
             objectFit: 'cover',
             width: '100%',
             height: '100%',
-          }} src= "https://dl.dropboxusercontent.com/s/ijanr03i2tlqqxs/Self-driving%20Chevrolet%20Bolt%20EV%20in%20production%20%28online-video-cutter.com%29.mp4?dl=0"
+          }} src= "https://www.dl.dropboxusercontent.com/s/lh2i4rvcerwxq7h/Wato_Intro3.mov?dl=0"
         />
       </div>
 
