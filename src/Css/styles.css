@@ -52,10 +52,13 @@
 
 }
 
-.Overview {
-  text-align: left;
+.OverviewSmall {
+  padding-left: 150px;
+  padding-right: 150px;
+  text-align: center;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+
 
 
 }
@@ -84,9 +87,30 @@
 }
 
 .heading {
-  font-family: 'Dosis', sans-serif;
-  font-size: 30px;
-  color: #000;
+  text-align: center;
+  font-family: RalewayLig, sans-serif;
+  font-size: 38px;
+  color: #333;
+}
+h2 {
+  text-align: left;
+  font-family: RalewayReg, sans-serif;
+  font-size: 24px;
+  color: #333;
+}
+p2 {
+  text-align: left;
+  float: left;
+  font-family: RalewayLig, sans-serif;
+  font-size: 15px;
+  color: #333;
+}
+
+.descriptionText {
+  text-align: center;
+  font-family: RalewayLig, sans-serif;
+  font-size: 20px;
+  color: #333;
 }
 
 .navItem {
