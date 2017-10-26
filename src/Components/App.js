@@ -8,7 +8,8 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 
 import Header from './Header.jsx';
 import CarouselStyled from './CarouselStyled.jsx';
-import Body from './Body.jsx';
+import Index from './Index.jsx';
+import Ressources from './Ressources.jsx'
 
 import Car1 from '../Images/carExample.jpg';
 
@@ -21,7 +22,7 @@ class App extends Component {
           <Header />
           <CarouselStyled />
 
-          <Body />
+          <Index />
         </ParallaxProvider>
       </div>
     );

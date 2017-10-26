@@ -7,6 +7,7 @@ import '../Css/styles.css';
 
 import IndexBody1 from './IndexBody1.jsx';
 import IndexBody2 from './IndexBody2.jsx';
+import IndexBody3 from './IndexBody3.jsx';
 
 
 import ParallaxImg1 from '../Images/CityPoly.jpg';
@@ -52,16 +53,16 @@ class Body extends Component {
 
         <IndexBody2 />
 
-        
-
-      <IndexBody1 />
 
 
+        <IndexBody3 />
 
-    </div>
-  );
 
-}
+
+      </div>
+    );
+
+  }
 
 }
 

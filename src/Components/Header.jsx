@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../Css/header.css';
-import logo from '../Images/logo.svg';
+import logo from '../Images/WhiteLogoNoSignal.png';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 
 class Header extends Component {
@@ -11,25 +11,18 @@ class Header extends Component {
 
     return(
       <div class="header">
-        <ul class="nav" >
-          <li class = "span-full" >RESSOURCES</li>
-          <li>HOME</li>
-          <li>MEDIA</li>
-          <li>SPONSOR</li>
-          <li>CONTACT</li>
-          <li>SIGNUP</li>
-        </ul>
+        <ul class="navigation">
+      		<li class="firstchild"><img src={logo}/></li>
+      		<li class="button">HOME</li>
+      		{/* <li class="button">ABOUT</li> */}
+      		<li class="button">SPONSORS</li>
+      		<li class="button">MEDIA</li>
+          {/* <li class="button">RESSOURCES</li> */}
 
-        {/* <ul class=" nav" >
-          <li>HOME</li>
-          <li>MEDIA</li>
-          <li>SPONSOR</li>
-          <li>CONTACT</li>
-          <li>SIGNUP</li>
+      		<li class="lastchild">CONTACT</li>
+      	</ul>
 
 
-
-        </ul> */}
 
       </div>
 

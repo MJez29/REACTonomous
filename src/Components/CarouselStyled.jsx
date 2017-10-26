@@ -62,7 +62,7 @@ class CarouselStyled extends Component {
 
 
 
-          <div className = "center" style = {{paddingTop: "100px"}}>
+          <div className = "center" style = {{paddingTop: "0px"}}>
             <h1 className = "carouselHeading">WATERLOO</h1>
             <p className = "carouselParagraph">AUTONOMOUS</p>
             <p className = "carouselParagraph2">VEHICLE DESIGN TEAM</p>
@@ -90,7 +90,7 @@ class CarouselStyled extends Component {
 
 
   </Carousel.Item>
-  <Carousel.Item>
+  {/* <Carousel.Item>
 
 
 
@@ -113,7 +113,7 @@ class CarouselStyled extends Component {
       <h3>Third slide label</h3>
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
     </Carousel.Caption>
-  </Carousel.Item>
+  </Carousel.Item> */}
 </Carousel>
 
 );

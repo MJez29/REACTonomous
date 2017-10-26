@@ -26,7 +26,7 @@ class IndexBody2 extends Component {
               <h1 className = "heading" >SAE Autodrive Challenge</h1>
               <div className = "spacerSmall" />
 
-              <p className = "descriptionText">Visit the <a href = "https://media.gm.com/media/us/en/gm/news.detail.html/content/Pages/news/us/en/2017/apr/0405-autodrive.html"> official post by GM </a> and the <a href = "https://uwaterloo.ca/engineering/news/waterloo-selected-autonomous-vehicle-competition" > University of Waterloo</a> for more information​. This newly established, three-year autonomous vehicle competition will task students to develop and demonstrate a full autonomous driving passenger vehicle. The technical goal of the competition is to navigate an urban driving course in an automated driving mode as described by SAE Standard
+              <p className = "descriptionText">This newly established, three-year autonomous vehicle competition will task students to develop and demonstrate a full autonomous driving passenger vehicle. The technical goal of the competition is to navigate an urban driving course in an automated driving mode as described by the SAE Standard. Visit the <a href = "https://media.gm.com/media/us/en/gm/news.detail.html/content/Pages/news/us/en/2017/apr/0405-autodrive.html"> official post by GM </a> and the <a href = "https://uwaterloo.ca/engineering/news/waterloo-selected-autonomous-vehicle-competition" > University of Waterloo</a> for more information​.
 
               </p>
 
@@ -46,7 +46,7 @@ class IndexBody2 extends Component {
         <div className = "spacerMedium" />
         <img style = {{height:"200px", marginTop: "-50px"}} src = {WatoLogo}/>
 
-      
+
 
         </Grid>
 
