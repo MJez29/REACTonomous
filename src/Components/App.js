@@ -12,17 +12,24 @@ import Index from './Index.jsx';
 import Ressources from './Ressources.jsx'
 
 import Car1 from '../Images/carExample.jpg';
+import {Link} from 'react-router';
+import { Switch, Route } from 'react-router-dom';
+
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+
+
         <ParallaxProvider>
           <Header />
           <CarouselStyled />
 
           <Index />
+
+
         </ParallaxProvider>
       </div>
     );

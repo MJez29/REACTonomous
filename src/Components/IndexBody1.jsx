@@ -44,7 +44,10 @@ class IndexBody1 extends Component {
 
         </Row>
         <div className = "spacerMedium" />
-        <img style = {{height:"200px", marginTop: "-50px"}} src = {WatoLogo}/>
+        <div style = {{textAlign:"center"}}>
+          <img style = {{height:"200px", marginTop: "-50px"}} src = {WatoLogo}/>
+
+        </div>
 
         <Row className="show-grid">
           <Col xs={6} md={4}>

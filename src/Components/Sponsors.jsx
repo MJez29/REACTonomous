@@ -14,6 +14,7 @@ class Sponsors extends Component {
     return(
       // Layout sponsor logos in column form
       <div>
+        <p>Media</p>
 
       </div>
 

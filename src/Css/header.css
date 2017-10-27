@@ -27,8 +27,25 @@ body {
 }
 
 .button {
-	padding: 0px 25px 0px 10px;
+	padding: 0px 15px 0px 10px;
+  color:#FFF;
 	/*background-color: #FFF;*/
+}
+.button:active {
+  text-decoration: none;
+  color:#FFF;
+}
+.button:hover {
+  text-decoration: none;
+  color:#FFF;
+}
+.button:link {
+  text-decoration: none;
+  color:#FFF;
+}
+.button:visited {
+  text-decoration: none;
+  color:#FFF;
 }
 
 .navigation li:first-child {
