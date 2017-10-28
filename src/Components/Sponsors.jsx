@@ -20,7 +20,11 @@ class Sponsors extends Component {
         <Header
           home = {0}
          />
-        <CarouselImage />
+        <CarouselImage/>
+        <div class="spacer"></div>
+        <h1 class="title">Sponsors</h1>
+        <p id="blurb">Blurb about sponsors and why they are so important</p>
+
       </div>
 
     );
