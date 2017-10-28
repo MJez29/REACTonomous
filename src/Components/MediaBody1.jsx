@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../Css/styles.css';
-import WatoLogo from '../Images/WATOlogoblue.svg';
+import WatoLogo from '../Images/SAE.png';
 
 import {Grid, Row, Col} from 'react-bootstrap';
 import Slider from 'react-slick'
@@ -8,34 +8,47 @@ import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 
 
-class SliderScroll extends Component {
+function SliderScroll(props) {}
 
 
   constructor(props) {
     super(props);
     this.state =  {
       dots : true,
-      infinite: true,
+      infinite: false,
       speed: 500,
-      slidesToShow: 1,
-      arrows: true
+      slidesToShow: 4,
+      arrows: true, //Change their color to black eventually
+      // centerMode: true,
       // slidesToScroll: 1
     }
+    this.GoUrl = this.GoUrl.bind(this);
 
   }
 
+  GoUrl() {
+    console.log("UHSKJAD");
+  };
+
   render() {
+
+    const imgStyle = {
+      height: "200px",
+    }
+    const
 
 
 
     return (
       <div>
         <Slider {...this.state}>
-          <div style = {{width: "200px"}}><img src = {WatoLogo}></img></div>
-          <div style = {{width: "200px"}}><img src = {WatoLogo}></img></div>
-          <div style = {{width: "200px"}}><img src = {WatoLogo}></img></div>
-          <div style = {{width: "200px"}}><img src = {WatoLogo}></img></div>
-          <div style = {{width: "200px"}}><img src = {WatoLogo}></img></div>
+          <div onClick={props.onClick} ><img src = {WatoLogo} style = {imgStyle}> </img></div>
+          <div style = {{textAlign:"center", backgroundColor: "#333"}}><img src = {WatoLogo} style = {{height: "200px"}}></img></div>
+          <div style = {{textAlign:"center", backgroundColor: "#333"}}><img src = {WatoLogo} style = {{height: "200px"}}></img></div>
+          <div style = {{textAlign:"center", backgroundColor: "#333"}}><img src = {WatoLogo} style = {{height: "200px"}}></img></div>
+          <div style = {{textAlign:"center", backgroundColor: "#333"}}><img src = {WatoLogo} style = {{height: "200px"}}></img></div>
+
+
 
 
         </Slider>
