@@ -8,41 +8,40 @@ import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 
 
-function SliderScroll(props) {}
+function SliderScroll(props) {
 
 
-  constructor(props) {
-    super(props);
-    this.state =  {
-      dots : true,
-      infinite: false,
-      speed: 500,
-      slidesToShow: 4,
-      arrows: true, //Change their color to black eventually
-      // centerMode: true,
-      // slidesToScroll: 1
-    }
-    this.GoUrl = this.GoUrl.bind(this);
+  // constructor(props) {
+  //   super(props);
+  //   this.state =  {
+  //     dots : true,
+  //     infinite: false,
+  //     speed: 500,
+  //     slidesToShow: 4,
+  //     arrows: true, //Change their color to black eventually
+  //     // centerMode: true,
+  //     // slidesToScroll: 1
+  //   }
+  //   this.GoUrl = this.GoUrl.bind(this);
+  //
+  // }
+  //
+  // GoUrl() {
+  //   console.log("UHSKJAD");
+  // };
 
-  }
-
-  GoUrl() {
-    console.log("UHSKJAD");
-  };
-
-  render() {
 
     const imgStyle = {
       height: "200px",
     }
-    const
+    // const
 
 
 
     return (
       <div>
-        <Slider {...this.state}>
-          <div onClick={props.onClick} ><img src = {WatoLogo} style = {imgStyle}> </img></div>
+        <Slider {...props.state}>
+          {/* <div onClick={props.onClick} ><img src = {WatoLogo} style = {imgStyle}> </img></div> */}
           <div style = {{textAlign:"center", backgroundColor: "#333"}}><img src = {WatoLogo} style = {{height: "200px"}}></img></div>
           <div style = {{textAlign:"center", backgroundColor: "#333"}}><img src = {WatoLogo} style = {{height: "200px"}}></img></div>
           <div style = {{textAlign:"center", backgroundColor: "#333"}}><img src = {WatoLogo} style = {{height: "200px"}}></img></div>
@@ -54,7 +53,7 @@ function SliderScroll(props) {}
         </Slider>
       </div>
     );
-  }
+
 
 }
 
