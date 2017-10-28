@@ -3,6 +3,48 @@ import '../Css/styles.css';
 import WatoLogo from '../Images/WATOlogoblue.svg';
 
 import {Grid, Row, Col} from 'react-bootstrap';
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+
+
+class SliderScroll extends Component {
+
+
+  constructor(props) {
+    super(props);
+    this.state =  {
+      dots : true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      arrows: true
+      // slidesToScroll: 1
+    }
+
+  }
+
+  render() {
+
+
+
+    return (
+      <div>
+        <Slider {...this.state}>
+          <div style = {{width: "200px"}}><img src = {WatoLogo}></img></div>
+          <div style = {{width: "200px"}}><img src = {WatoLogo}></img></div>
+          <div style = {{width: "200px"}}><img src = {WatoLogo}></img></div>
+          <div style = {{width: "200px"}}><img src = {WatoLogo}></img></div>
+          <div style = {{width: "200px"}}><img src = {WatoLogo}></img></div>
+
+
+        </Slider>
+      </div>
+    );
+  }
+
+}
+
 
 
 class MediaBody1 extends Component {
@@ -11,22 +53,25 @@ class MediaBody1 extends Component {
   render() {
 
     return(
-      <Grid>
-        <Row className="show-grid">
-          <Col xs = {3} md = {4}>
+      <div>
 
-          </Col>
-          <Col xs={20} md={12}>
+        <Grid>
+
+          <Row className="show-grid">
+            <Col xs = {3} md = {4}>
+
+            </Col>
+            <Col xs={20} md={12}>
 
 
-            <div className = "OverviewSmall">
-              {/* <div className = "spacerMedium" /> */}
-              <div className = "spacerBig" />
+              <div className = "OverviewSmall">
+                {/* <div className = "spacerMedium" /> */}
+                <div className = "spacerBig" />
 
-              <h1 className = "heading" >"They will work with real-world applications of advanced computation methods such as computer vision, pattern recognition, and autonomous vehicle controls."</h1>
-              <div className = "spacerSmall" />
+                <h1 className = "heading" >Follow us in the news and on social media. </h1>
+                <div className = "spacerSmall" />
 
-              <p className = "descriptionText">WATonomous is a student design at The University of Waterloo at the forefront in the design, creation, and neural training of autonomous, self-driving vehicles. We are proudly representing Canada in GM's SAE Autodrive Challenge to create a fully autonomous vehicle in a three year timeframe.
+                <p className = "descriptionText">"They will work with real-world applications of advanced computation methods such as computer vision, pattern recognition, and autonomous vehicle controls." <br /> -General Motors Newsroom
 
               </p>
 
@@ -43,6 +88,8 @@ class MediaBody1 extends Component {
 
 
         </Row>
+        <SliderScroll />
+
         <div className = "spacerMedium" />
         <div style = {{textAlign:"center"}}>
           <img style = {{height:"200px", marginTop: "-50px"}} src = {WatoLogo}/>
@@ -70,11 +117,11 @@ class MediaBody1 extends Component {
           </Row>
 
         </Grid>
-
-      );
-    }
-
-
+      </div>
+    );
   }
 
-  export default MediaBody1;
+
+}
+
+export default MediaBody1;

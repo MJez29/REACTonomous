@@ -45,7 +45,6 @@ class CarouselImage extends Component {
       <Carousel activeIndex={this.state.index} direction={this.state.direction} onSelect={this.handleSelect} >
         <Carousel.Item >
           <div>
-
             <div className = "center" style = {{paddingTop: "0px"}}>
               <h1 className = "carouselHeading">WATERLOO</h1>
               <p className = "carouselParagraph">AUTONOMOUS</p>
@@ -53,56 +52,25 @@ class CarouselImage extends Component {
             </div>
             <div style={{
               width: '100%',
-              height: '90vh',
+              height: '100vh',
               overflow: 'hidden',
-
             }}>
             <div style = {{
               backgroundImage: `url(${this.props.image})`,
               objectFit: 'cover',
               width: '100vw',
-              height: '90vh',
+              height: '100vh',
               backgroundSize: "100%"
             }} >
-
           </div>
-
         </div>
-
       </div>
 
-      {/* <Carousel.Caption>
-        <h3>Wato Self-Driving Car Team</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </Carousel.Caption> */}
 
 
     </Carousel.Item>
-    {/* <Carousel.Item>
 
-
-
-      <Parallax bgImage={ParallaxImg1} strength={400} style = {{zIndex: "3"}} >
-      <div style = {{height: "100vh"}}/>
-    </Parallax>
-
-
-
-
-
-    <Carousel.Caption>
-    <h3>Second slide label</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  </Carousel.Caption>
-</Carousel.Item>
-<Carousel.Item>
-<div className = "Carousel" alt="900x500" />
-<Carousel.Caption>
-<h3>Third slide label</h3>
-<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-</Carousel.Caption>
-</Carousel.Item> */}
-</Carousel>
+  </Carousel>
 
 );
 }
