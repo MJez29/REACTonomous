@@ -8,19 +8,19 @@ import Sponsors from './Components/Sponsors.jsx';
 import Contact from './Components/Contact.jsx';
 
 import registerServiceWorker from './registerServiceWorker';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 
 
 ReactDOM.render(
-  <BrowserRouter>
+  <Router>
     <Switch>
-      <Route path = "/" component = {Index} />
-      <Route path = "/Media" component = {Media} />
-      <Route path = "/Sponsors" component = {Sponsors} />
-      <Route path = "/Contact" component = {Contact} />
+      <Route exact path = "/" component = {Index} />
+      <Route exact path = "/media" component = {Media} />
+      <Route exact path = "/sponsors" component = {Sponsors} />
+      <Route exact path = "/contact" component = {Contact} />
     </Switch>
-</BrowserRouter>,
+</Router>,
 
 
   document.getElementById('root')

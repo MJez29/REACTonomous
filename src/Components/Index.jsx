@@ -20,6 +20,9 @@ import ParallaxImg1 from '../Images/CityPoly.jpg';
 import BoltFront from '../Images/BoltFront4.png';
 import Watleader from '../Images/WatLeaders.jpg';
 import BoltChasis from '../Images/BoltChasis.jpeg';
+import WatoSocialMedia from '../Images/WatoGroupSocial.jpg';
+import WatoSocialCar from '../Images/WatoGroupWithCar.jpg';
+
 
 
 
@@ -31,31 +34,49 @@ class Index extends Component {
     return (
       <div>
         <ParallaxProvider>
-          <Header />
+          <Header
+            home = {1}
+          />
           <CarouselStyled />
 
+          <IndexBody1/>
+          <div className = "spacerBig">
+
+          </div>
+
+          <div style = {{height: "500px"}}>
+            <Parallax bgImage={BoltChasis} strength={400} >
+              <div style = {{height: "50px"}}> </div>
+              <div style = {{ width: "100%", textAlign: "center"}}>
+                <h1 className = "heading" style = {{color:"#FFF"}}>Electric Self Driving Vehicle
+                </h1>
+                <h2 style = {{color:"#FFF", textAlign:"center", fontSize: "18px"}}>Join us as we transform the Chevrolet Bolt into North America's finest autonomous vehicle
+                </h2>
+                <Button bsStyle="primary" >Apply Now</Button>
+                <div style = {{height: "300px"}}> </div>
+              </div>
+            </Parallax>
+          </div>
+          <IndexBody2 />
+          <IndexBody3 />
+          <div style = {{height: "500px"}}>
+            <Parallax bgImage={WatoSocialMedia} strength={400} >
+              <div style = {{height: "50px"}}> </div>
+              <div style = {{ width: "100%", textAlign: "center"}}>
+                <h1 className = "heading" style = {{color:"#FFF"}}>Follow Us On Social Media
+                </h1>
+                <h2 style = {{color:"#FFF", textAlign:"center", fontSize: "18px"}}>Keep up to date on our development progress, incoming recruitment rounds, and our latest sponsorships.
+                </h2>
+                <Button bsStyle="primary" >Facebook</Button>
+                <Button bsStyle="primary" >Twitter</Button>
+                <Button bsStyle="primary" >Instagram</Button>
 
 
-        <IndexBody1/>
-        <div className = "spacerBig">
+                <div style = {{height: "300px"}}> </div>
+              </div>
+            </Parallax>
+          </div>
 
-        </div>
-
-        <div style = {{height: "500px"}}>
-          <Parallax bgImage={BoltChasis} strength={400} >
-            <div style = {{height: "50px"}}> </div>
-            <div style = {{ width: "100%", textAlign: "center"}}>
-              <h1 className = "heading" style = {{color:"#FFF"}}>Electric Self Driving Vehicle
-              </h1>
-              <h2 style = {{color:"#FFF", textAlign:"center", fontSize: "18px"}}>Join us as we transform the Chevrolet Bolt into North America's finest autonomous vehicle
-              </h2>
-              <Button bsStyle="primary" >Apply Now</Button>
-              <div style = {{height: "300px"}}> </div>
-            </div>
-          </Parallax>
-        </div>
-        <IndexBody2 />
-        <IndexBody3 />
         </ParallaxProvider>
       </div>
 

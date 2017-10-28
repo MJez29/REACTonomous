@@ -6,25 +6,32 @@ import { Link } from 'react-router-dom'
 
 class Header extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      home: 0,
+    };
+
+  }
+
 
 
   render() {
 
     return(
-      <div className="header">
-        <ul className="navigation">
-      		<li className="firstchild"><img src={logo}/></li>
-      		<li className="button"> <Link to = {'/'} activeStyle={{ color: '#FFF' }} activeClassName = "button" className = "button" > HOME </Link> </li>
-      		{/* <li class="button">ABOUT</li> */}
-      		<li className="button"><Link to = {'/Sponsors'} className ="button" activeClassName = "button"  > SPONSORS</Link></li>
-          <li className="button"><Link to = {'/Media'} className ="button" activeClassName = "button"  > MEDIA</Link></li>
-          {/* <li class="button">RESSOURCES</li> */}
+      <div className= {this.state.home ? 'header' : 'header2'}>
+        <div>
+          <ul className="navigation">
+            <li className="firstchild"><img src={logo}/></li>
+            <li className="button" > <Link to = {'/'} activeStyle={{ color: '#FFF' }} activeClassName = "button" className = "button" > HOME </Link> </li>
+            {/* <li class="button">ABOUT</li> */}
+            <li className="button"><Link to = {'/sponsors'} className ="button" activeClassName = "button"  > SPONSORS</Link></li>
+            <li className="button"><Link to = {'/media'} className ="button" activeClassName = "button"  > MEDIA</Link></li>
+            {/* <li class="button">RESSOURCES</li> */}
 
-          <li className="last-child"><Link to = {'/Contact'} className ="button" activeClassName = "button"  > CONTACT</Link></li>
-      	</ul>
-
-
-
+            <li className="last-child"><Link to = {'/contact'} className ="button" activeClassName = "button"  > CONTACT</Link></li>
+          </ul>
+        </div>
       </div>
 
     );

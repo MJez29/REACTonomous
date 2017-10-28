@@ -9,6 +9,10 @@ import Velodyne from '../Images/Velodynelogo.png';
 import WaterlooEng from '../Images/WaterlooGooseLogo.jpeg';
 import GeneralM from '../Images/GMlogo.jpg'
 
+import DynamicImage from '../Images/dynamicCar.jpg';
+import LaneChange from '../Images/laneChange.jpg';
+import Detection from '../Images/detectionLidar.png';
+
 
 class IndexBody3 extends Component {
 
@@ -24,19 +28,13 @@ class IndexBody3 extends Component {
             </Col>
             <Col xs={20} md={12}>
 
-
               <div className = "OverviewSmall">
                 {/* <div className = "spacerMedium" /> */}
                 <div className = "spacerBig" />
-
                 <h1 className = "heading" >Bolting design</h1>
                 <div className = "spacerSmall" />
-
-                <p className = "descriptionText">Using cutting edge cameras, lidar sensors, and industry leading image processing, WATonomous is configuring the Bolt in a reliable autonomous car.
+                <p className = "descriptionText">Using cutting edge cameras, lidar sensors, and industry leading image processing, WATonomous is configuring the Bolt in a reliable autonomous car. Integration of our packages into a cohesive project will let us excel at the core principals of autonomous vehicles
                 </p>
-
-
-
 
               </div>
             </Col>
@@ -49,22 +47,28 @@ class IndexBody3 extends Component {
           <div className = "spacerMedium" />
           {/* <img style = {{height:"200px", marginTop: "-50px"}} src = {WatoLogo}/> */}
 
-          {/* <Row className="show-grid">
+          <Row className="show-grid" style = {{width:"90%", paddingLeft: "10%", textAlign:"center"}}>
             <Col xs={6} md={4}>
-              <img style = {{width:"200px"}} src = {GeneralM}/>
+              <img style = {{height:"200px", marginTop: "-50px"}} src = {Detection}/>
 
+              <h2 style = {{textAlign:"center"}}>Object Detection</h2>
+              <div className = "spacerSmall" />
 
             </Col>
 
-            <Col xs={8} md={4}>
-              <img style = {{width:"400px", lineHeight: "200px"}} src = {Velodyne}/>
+            <Col xs={6} md={4}>
+              <img style = {{height:"200px", marginTop: "-50px"}} src = {LaneChange}/>
+
+              <h2 style = {{textAlign:"center"}}>Multi-Lane Changing</h2>
+              <div className = "spacerSmall" />
 
             </Col>
             <Col xs={4}>
-              <img style = {{width:"200px"}} src = {Intel}/>
-
+              <img style = {{height:"200px", marginTop: "-50px"}} src = {DynamicImage}/>
+              <h2 style = {{textAlign:"center"}} >Dynamic Collision Avoidance</h2>
+              <div className = "spacerSmall" />
             </Col>
-            </Row> */}
+            </Row>
 
           </Grid>
         </div>

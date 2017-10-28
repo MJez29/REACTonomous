@@ -12,6 +12,15 @@ body {
   padding-top: 20px;
 }
 
+.header2 {
+  position: fixed;
+  width: 100vw;
+  background-color: #222;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  z-index: 10;
+}
+
 .navigation {
 	background-color: transparent;
 	text-align: center;

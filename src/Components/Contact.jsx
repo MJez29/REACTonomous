@@ -14,7 +14,7 @@ class Contact extends Component {
     return(
       // Pretty sure there exists React Contact form npm packages we can use
       <div>
-
+        Hello There
       </div>
 
     );

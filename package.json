@@ -8,6 +8,7 @@
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.3",
     "react-dom": "^16.0.0",
+    "react-keydown": "^1.9.4",
     "react-parallax": "^1.4.4",
     "react-parallax-component": "^1.0.6",
     "react-router": "^4.2.0",

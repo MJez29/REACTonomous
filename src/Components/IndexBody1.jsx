@@ -49,7 +49,7 @@ class IndexBody1 extends Component {
 
         </div>
 
-        <Row className="show-grid">
+        <Row className="show-grid" style = {{width:"90%", paddingLeft: "10%"}}>
           <Col xs={6} md={4}>
 
             <h2 >Year 1</h2>
