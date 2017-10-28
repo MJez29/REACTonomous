@@ -41,11 +41,14 @@ function SliderScroll(props) {
     return (
       <div>
         <Slider {...props.state}>
-          {/* <div onClick={props.onClick} ><img src = {WatoLogo} style = {imgStyle}> </img></div> */}
+          {/* <div  ><img src = {WatoLogo} > </img></div> */}
+          <div onClick = {props.onClick} style = {{textAlign:"center", backgroundColor: "#333"}}><img src = {WatoLogo} style = {{width: "100%"}}></img></div>
+          <div onClick = {props.onClick} style = {{textAlign:"center", backgroundColor: "#333"}}><img src = {WatoLogo} style = {{width: "100%"}}></img></div>
+          <div onClick = {props.onClick} style = {{textAlign:"center", backgroundColor: "#333"}}><img src = {WatoLogo} style = {{width: "100%"}}></img></div>
+          <div onClick = {props.onClick} style = {{textAlign:"center", backgroundColor: "#333"}}><img src = {WatoLogo} style = {{width: "100%"}}></img></div>
+
           <div style = {{textAlign:"center", backgroundColor: "#333"}}><img src = {WatoLogo} style = {{height: "200px"}}></img></div>
-          <div style = {{textAlign:"center", backgroundColor: "#333"}}><img src = {WatoLogo} style = {{height: "200px"}}></img></div>
-          <div style = {{textAlign:"center", backgroundColor: "#333"}}><img src = {WatoLogo} style = {{height: "200px"}}></img></div>
-          <div style = {{textAlign:"center", backgroundColor: "#333"}}><img src = {WatoLogo} style = {{height: "200px"}}></img></div>
+
 
 
 
@@ -61,8 +64,27 @@ function SliderScroll(props) {
 
 class MediaBody1 extends Component {
 
+  constructor() {
+    super();
+    this.state =  {
+      dots : true,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 4,
+      arrows: true, //Change their color to black eventually
+      // centerMode: true,
+      // slidesToScroll: 1
+    }
+
+  }
+
+  handleGalleryClick(i) {
+    console.log("kasjhgdasj\n");
+  }
 
   render() {
+
+
 
     return(
       <div>
@@ -100,7 +122,10 @@ class MediaBody1 extends Component {
 
 
         </Row>
-        <SliderScroll />
+        <SliderScroll
+          state = {this.state}
+          onClick = {() => this.handleGalleryClick(1)}
+         />
 
         <div className = "spacerMedium" />
         <div style = {{textAlign:"center"}}>
