@@ -9,7 +9,7 @@ class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      home: 0,
+      home: this.props.home,
     };
 
   }
@@ -19,7 +19,7 @@ class Header extends Component {
   render() {
 
     return(
-      <div className= {this.state.home ? 'header' : 'header2'}>
+      <div className= {this.props.home ? 'header' : 'header2'}>
         <div>
           <ul className="navigation">
             <li className="firstchild"><img src={logo}/></li>
