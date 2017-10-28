@@ -8,16 +8,26 @@ import CarouselImage from './CarouselImage.jsx';
 
 import MediaBody1 from './MediaBody1.jsx';
 import WatoCarArrived from '../Images/WatoCarArrived.jpg';
+import Slider from 'react-slick';
 
 
 
 class Media extends Component {
+  constructor(props) {
+    super(props);
+    this.state =  {
+      dots : true,
+    }
+
+  }
 
   render() {
 
     return(
       //I was thinking having quotes in a large font from news releases and linking the newspaper logo next to it, all in a column form.
       <div>
+
+      
         <Header
           home = {0}
          />

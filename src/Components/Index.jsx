@@ -34,6 +34,8 @@ class Index extends Component {
     return (
       <div>
         <ParallaxProvider>
+
+
           <Header
             home = {1}
           />
