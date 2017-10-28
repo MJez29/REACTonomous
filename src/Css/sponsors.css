@@ -2,9 +2,14 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
+.sponsors {
+	text-align: center; 
+}
+
 .sponsors img {
 	width: 200px;
 	height: 200px;
+	margin: 50px; 
 }
 
 #UWEng {
@@ -34,7 +39,7 @@ body {
 
 #velo {
 	width: 600px;
-	height: 200px; 
+	height: 180px; 
 }
 
 .title {
@@ -55,7 +60,6 @@ body {
 	font-size: 20px; 
 	width: 60%;
 	margin: auto;
-	margin-bottom: 30px;
 }
 
 .separation {
