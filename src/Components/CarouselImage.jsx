@@ -58,7 +58,7 @@ class CarouselImage extends Component {
 
             }}>
             <div style = {{
-              backgroundImage: `url(${WatoSocialCar})`,
+              backgroundImage: `url(${this.props.image})`,
               objectFit: 'cover',
               width: '100vw',
               height: '90vh',
